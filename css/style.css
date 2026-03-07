@@ -102,16 +102,16 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.noticias, .social {
+.noticias {
     padding: 30px;
 }
 
-.noticias h2, .social h2, .elenco h2, .tecnica h2 {
+.noticias h2, .elenco h2, .tecnica h2 {
     margin-bottom: 20px;
     color: #0a7a33;
 }
 
-#container-noticias, #container-redes {
+#container-noticias {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -145,12 +145,12 @@ nav a:hover {
     object-fit: cover;
 }
 
-.elenco, .tecnica, .social {
+.elenco, .tecnica {
     padding: 40px;
     text-align: center;
 }
 
-.container-elenco, .container-tecnica, container-redes {
+.container-elenco, .container-tecnica {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -158,7 +158,7 @@ nav a:hover {
     margin-top: 30px;
 }
 
-.card-jogador, .card-tecnica, .rede-sociais {
+.card-jogador, .card-tecnica {
     background-color: #ffff;
     width: 250px;
     padding: 20px;
@@ -167,11 +167,11 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.card-jogador:hover, .card-tecnica:hover, .rede-sociais:hover {
+.card-jogador:hover, .card-tecnica:hover {
     transform: translateY(-5px);
 }
 
-.card-jogador img, .card-tecnica img, .rede-sociais img {
+.card-jogador img, .card-tecnica img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -225,6 +225,12 @@ main strong {
 main ol {
     padding-bottom: 5px;
     padding-left: 25px;
+}
+
+.redes a{
+    font-size: 24px;
+    color: white;
+    margin: 10px;
 }
 
 footer {
