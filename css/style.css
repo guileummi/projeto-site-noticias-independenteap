@@ -20,7 +20,7 @@ header h1 {
 nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 nav a {
@@ -33,43 +33,8 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.dropdown {
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffff;
-    border-radius: 15px;
-    list-style: none;
-    padding: 20px;
-    display: none;
-    width: 200px;
-}
-
-.submenu li {
-    margin-bottom: 15px;
-}
-
-.submenu li:last-child {
-    margin-bottom: 0;
-}
-
-.submenu a {
-    color: #0a7a33;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.dropdown:hover .submenu { /* Mostrar menu ao passar o mouse */
-    display: block;
-}
-
-.dropdown a {
-    position: relative;
+.submenu{
+    display:block;
 }
 
 .menu {
@@ -79,9 +44,10 @@ nav a:hover {
     position: absolute;
     width: 100%;
     left: 0;
+    padding-left: 21px;
 }
 
-.menu:active {
+.menu.active {
     display: flex;
 }
 
@@ -166,7 +132,7 @@ body {
 
 .card img {
     width: 100%;
-    height: 300px; 
+    height: 200px; 
     object-fit: cover;
 }
 
@@ -280,12 +246,57 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .dropdown {
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffff;
+        border-radius: 15px;
+        list-style: none;
+        padding: 20px;
+        display: none;
+        width: 200px;
+    }
+
+    .submenu li {
+        margin-bottom: 15px;
+    }
+
+    .submenu li:last-child {
+        margin-bottom: 0;
+    }
+
+    .submenu a {
+        color: #0a7a33;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .dropdown:hover .submenu { /* Mostrar menu ao passar o mouse */
+        display: block;
+    }
+
+    .dropdown a {
+        position: relative;
+    }
+
     .menu{
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
     }
 
     .menu-toggle{
-    display: none;
+        display: none;
     }
 }
